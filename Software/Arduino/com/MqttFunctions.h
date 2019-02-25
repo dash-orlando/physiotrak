@@ -7,19 +7,17 @@
 #include "Adafruit_MQTT_Client.h"
 
 /************************* WiFi Access Point *********************************/
-#define WLAN_SSID             "pd3d_magneto"                   // Wi-Fi SSID
-#define WLAN_PASS             "pd3d@ist"                      // Wi-Fi Password
-//#define WLAN_SSID             "pd3d"                          // Wi-Fi SSID
-//#define WLAN_PASS             "n3w.pas."                      // Wi-Fi Password
+#define WLAN_SSID             "physiotrak"                   // Wi-Fi SSID
+#define WLAN_PASS             "physiotrak"                      // Wi-Fi Password
 
 /************************* MQTT Server Setup *********************************/
-#define MQTT_SERVER           "192.168.42.1"                  // URL to the RPi running MQTT
+#define MQTT_SERVER           "192.168.4.1"                  // URL to the RPi running MQTT
 #define MQTT_SERVERPORT       1883                            // Use 8883 for SSL
 
 /************************* MQTT Topic  Setup *********************************/
-#define MQTT_ID               "MAGNETICTRACKING-"             // Identifier to MQTT broker
+#define MQTT_ID               "physiotrak"             // Identifier to MQTT broker
 #define QOS                   1                               // QOS1 == deliver at least once
-#define SENSOR01_PUB          "magfield"                      // Topic
+#define SENSOR01_PUB          "test_channel"                      // Topic
 
 String                  ID        = "ID - ";
 String                  mqttID( MQTT_ID );
