@@ -1,0 +1,9 @@
+Date,Highlights,Details,Next Steps
+2/25/2019,Started interfacing pulse oximeter sensors available in the lab,Using Arduino UNO and MAX3501 Pulse Oximeter,Develop Arduino program for sensor control and data acquisition and transfer
+,Started sketching sensor holder prototype:,,
+,,Forehead design,3D Design and printing of designs
+,,Neck design,
+,"Started building the data gathering, communication central","Python script, uses MQTT",Develop Python program for data transfer and logging
+,,,Order parts as listed in proposal
+,,,
+,,,
