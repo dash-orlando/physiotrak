@@ -58,10 +58,10 @@ Add the information below to the configuration file. This configuration assumes 
 
 To use the 5 GHz band, you can change the operations mode from hw_mode=g to hw_mode=a. Possible values for hw_mode are:
 
-a = IEEE 802.11a (5 GHz)
-b = IEEE 802.11b (2.4 GHz)
-g = IEEE 802.11g (2.4 GHz)
-ad = IEEE 802.11ad (60 GHz)
+*   a = IEEE 802.11a (5 GHz)
+*   b = IEEE 802.11b (2.4 GHz)
+*   g = IEEE 802.11g (2.4 GHz)
+*   ad = IEEE 802.11ad (60 GHz)
 
 ```
 interface=wlan0
@@ -116,21 +116,13 @@ Reboot
 sudo reboot
 ```
 
+#### Verification
 Using a wireless device, search for networks. The network SSID you specified in the hostapd configuration should now be present, and it should be accessible with the specified password.
 
 If SSH is enabled on the Raspberry Pi access point, it should be possible to connect to it from another Linux box (or a system with SSH connectivity present) as follows, assuming the pi account is present:
 
 ssh pi@192.168.4.1
 By this point, the Raspberry Pi is acting as an access point, and other devices can associate with it. Associated devices can access the Raspberry Pi access point via its IP address for operations such as rsync, scp, or ssh.
-
-
-1. download mosquitto
-2. download mosquitto clients
-```
-sudo apt-get install mosquitto
-sudo apt-get install mosquitto-clients
-```
-
 
 #### References
 1. [**Setting up a Raspberry Pi as an access point in a standalone network (NAT)**](https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md)
