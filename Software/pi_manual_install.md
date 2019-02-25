@@ -1,11 +1,6 @@
-# physiotrak
-Repo. for the development of the physio. tracking project
+# Raspberry Pi
+## Manual Installation
 
-## Installation
-### ESP32 (Arduino)
-
-
-### Raspberry Pi
 The **manual** installation for the Raspberry Pi follows the steps discussed in [1], [..], and [..]
 ```
 sudo apt-get install dnsmasq hostapd
