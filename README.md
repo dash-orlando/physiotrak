@@ -6,7 +6,7 @@ Repo. for the development of the physio. tracking project
 
 
 ### Raspberry Pi
-The **manual** installation for the Raspberry Pi follows the steps discussed in [1], [..], and [..]
+The **manual** installation for the Raspberry Pi follows the steps discussed [in](https://github.com/pd3d/physiotrak/blob/master/Software/pi_manual_install.md) [1], [..], and [..]
 ```
 sudo apt-get install dnsmasq hostapd
 ```
