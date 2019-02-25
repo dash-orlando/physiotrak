@@ -90,23 +90,31 @@ DAEMON_CONF="/etc/hostapd/hostapd.conf"
 
 #### Start it up
 Now start up the remaining services:
-
+```
 sudo systemctl start hostapd
 sudo systemctl start dnsmasq
-Add routing and masquerade
-Edit /etc/sysctl.conf and uncomment this line:
+```
+#### Add routing and masquerade
+Edit `/etc/sysctl.conf` and uncomment this line:`net.ipv4.ip_forward=1`
 
-net.ipv4.ip_forward=1
 Add a masquerade for outbound traffic on eth0:
-
+```
 sudo iptables -t nat -A  POSTROUTING -o eth0 -j MASQUERADE
+```
+
 Save the iptables rule.
-
+```
 sudo sh -c "iptables-save > /etc/iptables.ipv4.nat"
-Edit /etc/rc.local and add this just above "exit 0" to install these rules on boot.
+```
 
+Edit `/etc/rc.local` and add this just above "exit 0" to install these rules on boot.
+```
 iptables-restore < /etc/iptables.ipv4.nat
+```
 Reboot
+```
+sudo reboot
+```
 
 Using a wireless device, search for networks. The network SSID you specified in the hostapd configuration should now be present, and it should be accessible with the specified password.
 
