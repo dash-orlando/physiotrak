@@ -1,5 +1,4 @@
-# Raspberry Pi
-## Manual Installation
+# Raspberry Pi / Manual Installation
 
 The **manual** installation for the Raspberry Pi follows the steps discussed in [1], [..], and [..]
 ```
