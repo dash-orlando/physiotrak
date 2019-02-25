@@ -3,8 +3,10 @@ Repo. for the development of the physio. tracking project
 
 ## Installation
 ### ESP32 (Arduino)
+
+
 ### Raspberry Pi
--. setup pi as a NAT as in [1]
+The **manual** installation for the Raspberry Pi follows the steps discussed in [1], [..], and [..]
 ```
 sudo apt-get install dnsmasq hostapd
 ```
