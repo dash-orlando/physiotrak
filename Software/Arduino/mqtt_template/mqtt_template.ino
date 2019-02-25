@@ -2,11 +2,14 @@
  * test
  */
 
+// Call auxiliary functions library
+#include "MqttFunctions.h"
+
 // Useful defines.
 #define BAUDRATE              115200                          // Serial communication baudrate
 
-// Call auxiliary functions library
-#include "MqttFunctions.h"
+// Variables
+int buff;
 
 void setup() {
 
@@ -25,11 +28,12 @@ void loop() {
     MQTT_connect( 125 );                                      // to MQTT server
 
   // do stuff with sensors here...
-  char    buff[156] = {'\0'};                                 // String buffer
+  buff = random(0,100);
+
+  
   // connection stuff...
   if ( devOutput.publish( buff ) ) {                              // Make sure it publishes
-    //Serial.println( buff );
-    Serial.println("hola");// ...
+    Serial.println( buff );
   } else {                                                          // In case it fails, disconnect from MQTT Server
     mqtt.disconnect();                                          // ...
   }
