@@ -31,5 +31,9 @@
     5.  Upload Sketch `(Ctrl + U)`
         1.  _Errors here will be related to the connection, ports or issues with the hardware_
 
+5. Now you can upload any alternate porgram based of the **mqtt_template.ino**
+    1.  Use step 4 as a reference for testing and validation
+
 #### References
+N.A.
 
