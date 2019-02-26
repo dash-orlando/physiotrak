@@ -2,27 +2,27 @@
  * MQTT Functions such as: Connect to WiFi, subscribe, publish, etc...
  */
 
-#include <WiFi.h>                                             // WiFi Library
+#include <WiFi.h>                                                              // WiFi Library
 #include "Adafruit_MQTT.h"
 #include "Adafruit_MQTT_Client.h"
 
 /************************* WiFi Access Point *********************************/
-#define WLAN_SSID             "physiotrak"                   // Wi-Fi SSID
-#define WLAN_PASS             "physiotrak"                      // Wi-Fi Password
+#define WLAN_SSID             "physiotrak"                                    // Wi-Fi SSID
+#define WLAN_PASS             "physiotrak"                                    // Wi-Fi Password
 
 /************************* MQTT Server Setup *********************************/
-#define MQTT_SERVER           "192.168.4.1"                  // URL to the RPi running MQTT
-#define MQTT_SERVERPORT       1883                            // Use 8883 for SSL
+#define MQTT_SERVER           "192.168.4.1"                                   // IP address of the Raspberry Pi hosting/brokering
+#define MQTT_SERVERPORT       1883                                            // Use 8883 for SSL
 
 /************************* MQTT Topic  Setup *********************************/
-#define MQTT_ID               "physiotrak"             // Identifier to MQTT broker
-#define QOS                   1                               // QOS1 == deliver at least once
-#define SENSOR01_PUB          "test_channel"                      // Topic
+#define MQTT_ID               "physiotrak"                                    // Identifier to MQTT broker
+#define QOS                   1                                               // QOS1 == deliver at least once
+#define SENSOR01_PUB          "test_channel"                                  // Name of topic
 
-String                  ID        = "ID - ";
-String                  mqttID( MQTT_ID );
+String  ID = "ID - ";
+String  mqttID( MQTT_ID );
 
-WiFiClient espClient;                                         // Use WiFiClientSecure for SSL
+WiFiClient espClient;                                                         // Use WiFiClientSecure for SSL
 
 ////  Requires: '#include "WifiFunctions.h"' in main program
 ////  before:   '#include "MqttFunctions.h"'.
