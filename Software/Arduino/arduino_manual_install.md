@@ -21,6 +21,15 @@
 3.  Install **Adafruit's MQTT Libraries** using Libraries Manager *(within Arduino IDE)*
     1.  Go to `Sketch > Include Library > Libraries Manager`
     2.  Search, download and install the latest version of the `Adafruit MQTT Library`
+    
+4. Test by opening the **mqtt_template.ino** file
+    1.  Go to `Tools > Boards` and select the **Adafruit ESP32 Feather** board *(you may need to scroll)*
+    2.  Verify/Compile Sketch `(Ctrl + R)`
+        1.  _Errors here will be related to library installation problems (Steps 2 and 3)_
+    3.  Connect **Adafruit ESP32 Feather**
+    4.  Select the corresponding COM port in `Tools > Port`
+    5.  Upload Sketch `(Ctrl + U)`
+        1.  _Errors here will be related to the connection, ports or issues with the hardware_
 
 #### References
 
