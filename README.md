@@ -3,6 +3,7 @@ Repo. for the development of the physio. tracking project
 
 ## Installation
 ### ESP32 (Arduino)
+*   [Manual installation]()
 
 
 ### Raspberry Pi
