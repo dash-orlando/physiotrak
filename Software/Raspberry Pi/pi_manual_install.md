@@ -90,6 +90,13 @@ Now start up the remaining services:
 sudo systemctl start hostapd
 sudo systemctl start dnsmasq
 ```
+>   **ERROR:** `Failed to start hostapd.service: Unit hostapd.service is masked.`
+>    ```
+>    * hostapd.service
+>       Loaded: masked (/dev/null; bad)
+>       Active: inactive (dead)
+>    ```
+
 #### Add routing and masquerade
 Edit `/etc/sysctl.conf` and uncomment this line:`net.ipv4.ip_forward=1`
 
