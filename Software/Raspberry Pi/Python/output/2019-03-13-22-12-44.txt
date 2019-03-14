@@ -1,0 +1,168 @@
+Time,IR Value
+0.137,1456
+Time,IR Value
+0.251,1459
+Time,IR Value
+0.369,1467
+Time,IR Value
+0.490,1449
+Time,IR Value
+0.614,1456
+Time,IR Value
+0.757,1487
+Time,IR Value
+0.869,1464
+Time,IR Value
+0.991,1469
+Time,IR Value
+1.109,1467
+Time,IR Value
+1.231,1444
+Time,IR Value
+1.348,1447
+Time,IR Value
+1.470,1479
+Time,IR Value
+1.589,1475
+Time,IR Value
+1.713,1469
+Time,IR Value
+1.830,1458
+Time,IR Value
+1.950,1466
+Time,IR Value
+2.071,1475
+Time,IR Value
+2.208,1466
+Time,IR Value
+2.330,1473
+Time,IR Value
+2.450,1470
+Time,IR Value
+2.569,1463
+Time,IR Value
+2.689,1464
+Time,IR Value
+2.808,1468
+Time,IR Value
+2.928,1453
+Time,IR Value
+3.048,1468
+Time,IR Value
+3.168,1463
+Time,IR Value
+3.288,1462
+Time,IR Value
+3.408,1462
+Time,IR Value
+3.528,1474
+Time,IR Value
+3.647,1472
+Time,IR Value
+3.767,1455
+Time,IR Value
+3.885,1473
+Time,IR Value
+4.007,1480
+Time,IR Value
+4.125,1459
+Time,IR Value
+4.247,1465
+Time,IR Value
+4.365,1465
+Time,IR Value
+4.486,1443
+Time,IR Value
+4.604,1443
+Time,IR Value
+4.736,1465
+Time,IR Value
+4.864,1478
+Time,IR Value
+4.990,1482
+Time,IR Value
+5.106,1467
+Time,IR Value
+5.226,1455
+Time,IR Value
+5.347,1465
+Time,IR Value
+5.465,1478
+Time,IR Value
+5.585,1471
+Time,IR Value
+5.707,1464
+Time,IR Value
+5.825,1456
+Time,IR Value
+5.945,1469
+Time,IR Value
+6.065,1470
+Time,IR Value
+6.184,1472
+Time,IR Value
+6.304,1467
+Time,IR Value
+6.425,1467
+Time,IR Value
+6.544,1469
+Time,IR Value
+6.664,1459
+Time,IR Value
+6.784,1462
+Time,IR Value
+6.903,1475
+Time,IR Value
+7.023,1453
+Time,IR Value
+7.142,1464
+Time,IR Value
+7.266,1482
+Time,IR Value
+7.381,1456
+Time,IR Value
+7.503,1462
+Time,IR Value
+7.621,1471
+Time,IR Value
+7.742,1452
+Time,IR Value
+7.861,1471
+Time,IR Value
+7.982,1477
+Time,IR Value
+8.102,1470
+Time,IR Value
+8.226,1459
+Time,IR Value
+8.342,1457
+Time,IR Value
+8.461,1477
+Time,IR Value
+8.581,1454
+Time,IR Value
+8.701,1470
+Time,IR Value
+8.821,1464
+Time,IR Value
+8.941,1464
+Time,IR Value
+9.061,1456
+Time,IR Value
+9.181,1459
+Time,IR Value
+9.300,1465
+Time,IR Value
+9.420,1449
+Time,IR Value
+9.540,1469
+Time,IR Value
+9.660,1465
+Time,IR Value
+9.780,1464
+Time,IR Value
+9.898,1459
+Time,IR Value
+10.022,1452
+Time,IR Value
+10.137,1471
