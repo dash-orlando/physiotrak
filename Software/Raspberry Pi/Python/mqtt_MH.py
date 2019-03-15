@@ -18,6 +18,9 @@ from    time                        import  sleep, clock    # Sleep for stabilit
 from    time                        import  time            # Time for timing (like duh!)
 from timeStamp import *
 import os.path
+import os
+
+
 
 
 
@@ -65,8 +68,12 @@ filename = time_stamp + '.txt'
 
 
 #save file in a specified folder
-save_path = '/home/pi/pd3d/repos/physiotrak/Software/Raspberry Pi/Python/output'
-output_data = os.path.join(save_path, filename)
+save_path = '/home/pi/pd3d/repos/physiotrak/Software/Raspberry Pi/Python/output/'
+print os.path.exists(save_path)
+if not os.path.exists(save_path):
+    os.makedirs(save_path)
+output_data = os.path.join(save_path ,filename)
+
 
 with open(output_data, "a") as file_object:
     file_object.write(header)
