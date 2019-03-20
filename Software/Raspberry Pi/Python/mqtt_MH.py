@@ -31,7 +31,7 @@ start = time.time()
 print(start)
 elapsed_time = time.time()-start
 
-header = "Time" + "," + "IR Value" + "\n" 
+header = "Time" + "," + "BPM" + "\n" 
 
 
 # FUNCTIONS ============================================================ #
