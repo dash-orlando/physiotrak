@@ -83,6 +83,11 @@ Find the line with #DAEMON_CONF, and replace it with this:
 ```
 DAEMON_CONF="/etc/hostapd/hostapd.conf"
 ```
+Ensure hostapd is part of the boot sequence [2]
+```
+sudo update-rc.d hostapd enable
+```
+
 
 #### Start it up
 Now start up the remaining services:
@@ -90,6 +95,8 @@ Now start up the remaining services:
 sudo systemctl start hostapd
 sudo systemctl start dnsmasq
 ```
+>   **ERROR 001:** `Failed to start hostapd.service: Unit hostapd.service is masked.`
+
 #### Add routing and masquerade
 Edit `/etc/sysctl.conf` and uncomment this line:`net.ipv4.ip_forward=1`
 
@@ -120,6 +127,31 @@ If SSH is enabled on the Raspberry Pi access point, it should be possible to con
 ssh pi@192.168.4.1
 By this point, the Raspberry Pi is acting as an access point, and other devices can associate with it. Associated devices can access the Raspberry Pi access point via its IP address for operations such as rsync, scp, or ssh.
 
+---
+
+#### Troubleshooting
+Consolidated lis of installation **ERRORS** and **SOLUTIONS**, with additional information and details
+
+
+**ERROR 001:** `Failed to start hostapd.service: Unit hostapd.service is masked.`
+
+*   **SOLUTION 001:**
+
+    1.  Check `hostapd` status: `sudo systemctl status hostapd`
+    
+    2.  IF the error truly corresponds to a masking issue, the terminal response should be:
+    
+            * hostapd.service
+                Loaded: masked (/dev/null; bad)
+                Active: inactive (dead)
+            
+    3.  Unmask `hostapd` service: `sudo systemctl unmask hostapd`
+        
+    4.  Try starting service again...
+
+---
+
 #### References
 1. [**Setting up a Raspberry Pi as an access point in a standalone network (NAT)**](https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md)
 
+2. [**Run hostapd service on boot**](http://hawksites.newpaltz.edu/myerse/2018/06/08/hostapd-on-raspberry-pi/)

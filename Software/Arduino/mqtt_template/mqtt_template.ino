@@ -1,9 +1,9 @@
-/*
+ /*
  * test
  */
 
 // Call auxiliary functions library
-#include "MqttFunctions.h"
+#include "MQTT_Functions.h"
 
 // Useful defines.
 #define BAUDRATE              115200                          // Serial communication baudrate

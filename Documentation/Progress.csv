@@ -6,4 +6,7 @@ Date,Highlights,Details,Next Steps
 ,"Started building the data gathering, communication central","Python script, uses MQTT",Develop Python program for data transfer and logging
 ,,,Order parts as listed in proposal
 ,,,
-,,,
+3/26/2019,Continued interfacing pulse oximeter sensors available in the lab,Using Arduino UNO and MAX3501 Pulse Oximeter,Sensor does not seem to be performing as desired/expected
+,,Using the PulseSensor from World Famous Electronics,"Sensor performs on the Arduino, now adapting to the ESP32"
+,"Tested heart rate sensor for forehead, neck and earlobe",PulseSensor performs in every scenario,Build fixtures
+,Started design of three fixture models,"Modelus are specific to forehead, neck, and earlobe","Will print models and test fixing to sensors, components"
